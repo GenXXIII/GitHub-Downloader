@@ -1,0 +1,34 @@
+﻿@model GitHubDownloader.Models.GitHubDownloadModel
+
+@{
+    ViewBag.Title = "GitHub Folder Downloader";
+}
+
+<h2>GitHub Folder Downloader</h2>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:green">@ViewBag.Message</p>
+}
+
+<form asp-action="Index" method="post">
+    <label>Repo Owner:</label><br />
+    <input asp-for="RepoOwner" /><br />
+
+    <label>Repo Name:</label><br />
+    <input asp-for="RepoName" /><br />
+
+    <label>Branch:</label><br />
+    <input asp-for="Branch" value="main" /><br />
+
+    <label>Folder Path in Repo:</label><br />
+    <input asp-for="GithubFolderPath" /><br />
+
+    <label>Local Folder to Save Files:</label><br />
+    <input asp-for="LocalRootFolder" value="C:\\Downloads\\GitHub" /><br />
+
+    <label>GitHub Personal Access Token:</label><br />
+    <input asp-for="GithubToken" type="password" /><br /><br />
+
+    <button type="submit">Download</button>
+</form>

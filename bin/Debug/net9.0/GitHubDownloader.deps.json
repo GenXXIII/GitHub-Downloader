@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "GitHubDownloader/1.0.0": {
+        "runtime": {
+          "GitHubDownloader.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GitHubDownloader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
